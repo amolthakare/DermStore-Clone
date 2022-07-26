@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            border: 2px solid yellow;
+            height: 270px;
+            width: 100%;
+        }
+        #main>div:nth-child(1){
+            border: 2px solid yellow;
+            height: 200px;
+            width: 20%;
+        }
+        #main>div:nth-child(2){
+            border: 2px solid red;
+            height: 200px;
+            width:80% ;
+        }
+        #sort{
+            padding: 10px;
+        }
+        #container{
+            display: flex;
+            border: 2px solid black;
+        }
+        
+        
+        #side{
+            border: 2px solid red;
+            width: 20%;
+           
+        }
+        #leftsort{
+    display: flex;
+    justify-content :left;
+    margin-top: 10px;
+
+}
+#firstsort{
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 2%;
+}
+#leftsort>input{
+    height: 20px;
+    width: 20px;
+}
+#leftsort>div{
+    font-size: 20px;
+}
+        #skin{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            border: 2px solid teal;
+            
+            
+        }
+        
+        
+        img{
+         height: 65%;
+         width: 80%;
+        }
+        h4{
+            text-align: center;
+        }
+        button{
+    background-color: black;
+    color: white;
+    width: 80%;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h3>Refine</h3>
+            <hr>
+            <h3>Brand</h3>
+            <hr>
+        </div>
+        <div>
+            <h1>SKIN CARE</h1><br>
+            <p>At Dermstore, we feature a highly curated 
+                collection of skin care products and sets.
+                 You'll find professional-strength formulas
+                  from top skin care brands, historically only
+                   available at a dermatologist's office, and 
+                   specialty brands from around the world.
+                    From acne treatments to natural and anti-aging
+                     skin care, whether you're concerned with
+                      prevention or in search of an effective 
+                      solution for a specific issue, you'll find 
+                      everything you need in our collection. Browse products formulated with the most effective skin care ingredients including vitamins C and E and retinol and explore the industry's leading brands, including SkinCeuticals, SkinMedica, EltaMD, Obagi and Eminence Organic Skin Care. </p>
+                      
+                      <p>Sort By</p>
+                      
+                      <select name="" id="sort">
+                          <option value="Defalut">Defalut</option>
+                          <option value="Bestsellers">Bestsellers</option>
+                          <option value="Price: Low to High">Price: Low to High</option>
+                          <option value="Price: High to Low">Price: High to Low</option>
+                          <option value="A-Z">A-Z</option>
+                          <option value="Newest Arrivals">Newest Arrivals</option>
+                          <option value="Percentage Discount">Percentage Discount</option>
+                      </select>
+        </div>
+    </div>
+
+    <div id="container">
+        
+        <div id="side">
+            
+            <div id="firstsort">
+            <div id="leftsort">
+                <input type="checkbox" name="" id="">
+                <div>100% Pure</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Ghd</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>R+co</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Living proof</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Olaplex</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>dphue</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>miriam quevedo</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Jack Black</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Leonor Grey</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>NUORI</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Peter Thomas Roth</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Wander Beauty</div>
+                    </div>
+                </div>
+            
+           
+            <!-- second -->
+            <br>
+            <h3>Skin Care Product</h3>
+            <hr>
+            
+            
+            <div id="firstsort">
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Hair Preparation</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Hair Styling</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Hair Dye</div>
+                </div>
+                <br>
+                <h3>Skin Care Format</h3>
+                <hr>
+            </div>
+            <div id="firstsort">
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Afro-Caribbean </div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Colored </div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Curly & Wavy</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Damaged</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Dry</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Fine</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Frizzy</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Graying</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Normal</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Oily</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Thinning</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Weakened</div>
+                </div> 
+            </div>
+            <br>
+            <h3>Skin Type</h3>
+            <hr>
+            <div id="firstsort">
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Shampoo</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Dry Shampoo  </div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Hair & Scalp Treatments </div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Conditioner</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Hair Masks </div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Hair Oil</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Hair Thinning & Loss</div>
+                </div>
+                <div id="leftsort">
+                    <input type="checkbox" name="" id="">
+                    <div>Leave-In Conditioner </div>
+                </div>                 
+            </div>
+        </div>
+       
+    <div id="skin">
+        
+      
+    </div>
+</div>
+</body>
+</html>
+
+<script src="skin.js"></script>
+<script src="skindata.js"></script>

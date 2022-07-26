@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS file/navBar.css">
+    <link rel="stylesheet" href="./CSS file/slide.css">
+    <link rel="stylesheet" href="./CSS file/video.css">
+    <link rel="stylesheet" href="./CSS file/footer.css">
+    <link rel="stylesheet" href="./CSS file/hairNavHover.css">
+</head>
+<style>
+    #bodercheck {
+        /* border: 1px solid red; */
+        display: flex;
+    }
+
+    #bodercheck>div {
+        border: 1px solid rgb(66, 58, 177);
+        width: 250px;
+        height: 250px;
+    }
+</style>
+
+<body>
+    <div id="uperDiv"></div>
+    <div id="mainNavDiv">
+        <div id="dremNav"style="display: flex;" >
+
+            <div id="logoDiv">
+                <div class="westendHeader_logo-desktop ">
+                    <a href="https://www.dermstore.com/" class="westendHeader_logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="259" height="64" viewBox="0 0 259 64"
+                            style="padding: 23px 5px" class="headerLogo">
+                            <path
+                                d="M54.998 9.03C48.853 3.01 40.261 0 29.286 0H0v63.15h29.098c10.724 0 19.253-3.01 25.587-9.092 6.206-5.796 9.65-13.961 9.47-22.451.273-8.481-3.053-16.682-9.157-22.576zm-24.27 41.955c-7.057-.011-13.572-3.787-17.091-9.905-3.52-6.117-3.507-13.647.031-19.754 3.539-6.106 10.066-9.86 17.124-9.85 10.91.018 19.74 8.876 19.722 19.786-.017 10.91-8.875 19.74-19.785 19.723zm59.264-29.036h7.337c6.083 0 9.783 3.763 9.783 9.595 0 5.832-3.7 9.595-9.783 9.595h-7.337v-19.19zm7.086 14.863c3.198 0 5.017-2.007 5.017-5.268 0-3.26-1.819-5.268-5.017-5.268h-2.07v10.536h2.07zm26.903-14.863v4.327h-8.905v3.01h8.153v4.202h-8.153v3.324h8.905v4.327H110.06v-19.19h13.922zm8.341 12.856v6.334h-5.017v-19.19h8.717c4.202 0 7.086 2.32 7.086 6.522 0 2.885-1.505 4.892-3.888 5.77l4.578 6.898h-5.644l-4.076-6.334h-1.756zm0-4.013h3.136c1.818 0 2.634-.878 2.634-2.32 0-1.38-.816-2.321-2.634-2.321h-3.136v4.64zm22.702 10.347l-4.077-11.414V41.14h-4.766v-19.19h6.209l4.264 11.978 4.265-11.978h6.145v19.253h-4.766V29.725l-4.013 11.414h-3.261zm20.005-5.644c.439 1.317 1.568 1.944 3.135 1.944 1.568 0 2.634-.627 2.634-1.819 0-.878-.627-1.317-1.818-1.567l-3.763-.753c-2.822-.627-5.017-2.07-5.017-5.33 0-3.763 3.136-6.209 7.463-6.209 4.766 0 7.462 2.571 7.964 5.895h-4.954c-.44-1.066-1.317-1.881-2.948-1.881-1.442 0-2.445.627-2.445 1.693 0 .815.627 1.317 1.63 1.505l3.826.878c3.323.752 5.142 2.571 5.142 5.518 0 3.951-3.324 6.209-7.588 6.209-4.64 0-7.84-2.195-8.529-6.02h5.268v-.063zm11.852-13.546h17.058v4.327h-6.02v14.926h-5.08V26.276h-5.958V21.95zm27.092 19.504c-5.581 0-9.47-4.202-9.47-9.909 0-5.77 3.889-9.908 9.47-9.908 5.644 0 9.532 4.139 9.532 9.908 0 5.77-3.888 9.909-9.532 9.909zm0-15.428c-2.634 0-4.327 2.195-4.327 5.52 0 3.323 1.693 5.518 4.327 5.518s4.39-2.195 4.39-5.519c0-3.324-1.756-5.519-4.39-5.519zm16.681 8.78v6.334h-5.017v-19.19h8.717c4.202 0 7.087 2.32 7.087 6.522 0 2.885-1.505 4.892-3.888 5.77l4.578 6.898h-5.645l-4.076-6.334h-1.756zm0-4.013h3.136c1.818 0 2.634-.878 2.634-2.32 0-1.38-.816-2.321-2.634-2.321h-3.136v4.64zm27.782-8.843v4.327h-8.905v3.01h8.152v4.202h-8.152v3.324h8.905v4.327h-13.86v-19.19h13.86z"
+                                transform="translate(-890 -121) translate(890 121)"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="searchDiv">
+                <form class="nosubmit">
+                    <input class="nosubmit" type="search" placeholder="Search for a product or brand...">
+                </form>
+            </div>
+            <div id="accountDiv" style="display: flex;">
+                <div style="padding: 10px 5px 0px 38px; padding-top: 40px;">
+                    <a href="/accountHome.account">
+
+                        <svg class="responsiveAccountHeader_accountIcon" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="null">
+                            <path
+                                d="M12 10c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm0 2c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5zm-7 9H3c0-3.866 4.03-7 9-7s9 3.134 9 7h-2c0-2.636-3.04-5-7-5s-7 2.364-7 5z"
+                                transform="translate(-1146 -76) translate(17 68) translate(1121) translate(9 10)">
+                            </path>
+                        </svg>
+
+                    </a>
+                </div>
+                <p id="login">Account </p>
+            </div>
+            <div id="cardDiv" style="display: flex;">
+                <div class="cardNav" style="padding: 10px 5px 0px 38px; padding-top: 40px;">
+                    <a class="responsiveFlyoutBasket_basketButton" href="/my.basket" aria-label="Cart">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2c2.761 0 5 2.239 5 5h4v14H3V7h4c0-2.761 2.239-5 5-5zm7 7H5v10h14V9zm-7-5c-1.657 0-3 1.343-3 3h6c0-1.657-1.343-3-3-3z"
+                                transform="translate(-1293 -76) translate(1293 76)"></path>
+                        </svg>
+                    </a>
+                    <h3 id="totalItem" class="h3Card">0</h3>
+                </div>
+                <p id="card">Card</p>
+            </div>
+        </div>
+
+        <div id="nameNav">
+            <div>Brands</div>
+            <div> Browse By</div>
+            <div>Bestsellers</div>
+            <div id="skincarepage">Skin Care</div>
+            <div>Makeup</div>
+            <div id="haircarepage">
+                <nav>
+                    <div class="wrapper">
+                     <ul class="nav-links">
+                         <li>
+                          <a  href="#1" class="desktop-item" title="Live Score" id="stickyNav">Hair Care</a>
+                        
+                          <ul class="drop-menu">
+                            <li><a href="shampo.html">Shampoo</a></li>
+                            <li><a href="dryShampo.html">Dry Shampoo</a></li>
+                            <li><a href="conditioner.html">Conditioner</a></li>
+                            <li><a href="#4">Coarse</a></li>
+                            <li><a href="#5">Color-Treated</a></li>
+                            <li><a href="#6">ghd</a></li>
+                            <li><a href="#6">R+Co</a></li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </div>
+                  </nav>
+            </div>
+            <div>Bath & body</div>
+            <div id="mencarepage">Men</div>
+            <div>Tools&Devices</div>
+            <div> Gifts & Sets</div>
+            <div>BeautyFix</div>
+            <div>Sale</div>
+            <div>New</div>
+            <div>Skin 101</div>
+        </div>
+    </div>
+    <div id="responsSlider">
+        <div style="display: flex; ">
+            <!-- <a href="/info/delivery-information.list" class="responsiveUsp_clickable"> -->
+            <div class="responsiveUsp_icon" style="padding-top: -10px;">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="responsiveUsp_icon_svg-fill"
+                        d="M17.874 26a4.002 4.002 0 0 1-7.748 0H9.047V12.022H24v1.999L28 14l3 5 .023 7.028-1.153-.01A4.002 4.002 0 0 1 22.126 26h-4.252zM23 16v4h6v-1l-2-3h-4zm-9 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z">
+                    </path>
+                </svg>
+            </div>
+            <p style="margin-top: -13px;">FREE US shipping over $5</p>
+            <!-- </a> -->
+        </div>
+        <div>
+            <div class="responsiveUsp_icon">
+                <svg width="39" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <path class="responsiveUsp_icon_svg-fill"
+                        d="M21.45 28c3.23 0 5.85-2.686 5.85-6s-2.62-6-5.85-6c-3.23 0-5.85 2.686-5.85 6s2.62 6 5.85 6zm0 2c-4.308 0-7.8-3.582-7.8-8s3.492-8 7.8-8 7.8 3.582 7.8 8-3.492 8-7.8 8z">
+                    </path>
+                    <path class="responsiveUsp_icon_svg-fill"
+                        d="M15.732 26.782c-3.43-.84-5.982-4.006-5.982-7.782 0-4.418 3.492-8 7.8-8 2.814 0 5.28 1.529 6.652 3.82l-1.662 1.047C21.482 14.098 19.61 13 17.55 13c-3.23 0-5.85 2.686-5.85 6 0 2.792 1.875 5.197 4.485 5.836l-.453 1.946zM22.425 18h1.95l-3.9 8h-1.95z">
+                    </path>
+                </svg>
+
+            </div>
+            <p style="margin-top: -65px; margin-left: 33px;">New customers save 15% with code WELCOME15</p>
+        </div>
+        <div>
+            <div class="responsiveUsp_icon">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+
+                    <path class="responsiveUsp_icon_svg-stroke" d="M27 12H13v17h14V12z" stroke-width="2"></path>
+                    <path class="responsiveUsp_icon_svg-stroke" stroke-width="2" d="M16 20l3.031 3.035L23.983 17">
+                    </path>
+                    <path class="responsiveUsp_icon_svg-fill"
+                        d="M16 10a2 2 0 0 1 2-2v2h-2zM16 11h8v2h-8zM24 10a2 2 0 0 0-2-2v2h2zM18 8h4v2h-4z"></path>
+                    <path class="responsiveUsp_icon_svg-fill" d="M22 10h2v2h-2zM16 10h2v2h-2z"></path>
+                </svg>
+            </div>
+            <p style="margin-top: -63px; margin-left: 33px;">Redeem Dermstore Rewards</p>
+        </div>
+        <div>
+            <div class="responsiveUsp_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-8 -8 40 40">
+                    <path class="responsiveUsp_icon_svg-fill"
+                        d="M8.58123535,17.3666782 L8.57536766,17.3724713 L4,12.8552083 L5.38991989,11.4829397 L9.21683579,15.2612558 L19.6100801,5 L21,6.37226867 L9.22270348,18 L8.58123535,17.3666782 Z">
+                    </path>
+                </svg>
+            </div>
+            <p style="margin-top: -63px; margin-left: 40px;">Pay in 4 with Klarna</p>
+        </div>
+    </div>
+    <div id="EarnDiv">
+        <b id="earnBtag">Earn 3x points on PCA Skin. Limited time PCA Skin gift with any $150+ purchase.Ends 2/24.</b>
+    </div>
+    <!-- Slideshow container image slide -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/16/original-SKINC_DESKTOP-081116.png"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/53/original-HYPERMIGMENTATION_DESKTOP-040353.png"
+                style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://static.thcdn.com/images/xlarge/webp/widgets/208-us/54/original-FebSulwhasooBanner-082454.jpg"
+                style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div id="xdiv">
+        <h2>3x Points on PCA Skin</h2>
+        <p>Rewards members earn triple on their pro solutions. Limited time PCA Skin gift with any $150+ purchase. Ends
+            2/24</p>
+    </div>
+
+    <div id="mainBox1">
+        <div class="box2 fade">
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/12901140-9424904191542093.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$120.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+
+        <div class="box2 " >
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11907698-1474870996253889.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$120.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        
+        <div class="box2 fade" >
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/11379886-6964864781429289.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$90.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        
+        <div class="box2 fade" >
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/12902575-1284866433782963.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$70.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        
+        <div class="box2 fade">
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/13126467-4774880813872914.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$100.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+  <div style="text-align:center; margin-top: 20px;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+
+
+
+    <div id="meetGHt" style="margin-top: 60px;">
+        <div>
+            <img style="width: 100%; align-items: center;"
+                src="https://static.thcdn.com/images/small/webp/widgets/208-us/02/SAVE-_SQR-040202.jpg" alt="">
+            <div class="ndNmae">
+                <h3 class="h3Name">Auto-Replenish & Save</h3>
+                <p>Never run out of your favorites again:Save up to 20% when you shedule your must-haves.</p>
+            </div>
+        </div>
+        <div>
+            <img style="width: 100%;"
+                src="https://static.thcdn.com/images/small/webp/widgets/208-us/56/ghd_Brand_Launch_676x556-063156.jpg"
+                alt="">
+            <div class="ndNmae">
+                <h3 class="h3Name">Meet ghd</h3>
+                <p>This 3x Allure Best of Beauty winner really lives up to its good hair day</p>
+            </div>
+        </div>
+        <div>
+            <img style="width: 100%;"
+                src="https://static.thcdn.com/images/small/webp/widgets/208-us/05/original-FebBlackOwned-SQ-063205.jpg"
+                alt="">
+            <div class="ndNmae">
+                <h3 class="h3Name">Meet ghd</h3>
+                <p>Shop curated solutions with textured hair & melanin-rich skin in mind.</p>
+            </div>
+        </div>
+    </div>
+    <div id="shopBy">
+        <p>Shop By Category</p>
+    </div>
+    <div id="cleanCare">
+        <div>CLEANSERS</div>
+        <div>SKIN CARE</div>
+        <div>EYE CREAM</div>
+        <div>MOISTURIZERS</div>
+        <div>SUNSCREEN</div>
+        <div>FACE MASKS</div>
+        <div>HAIR CARE</div>
+        <div>MAKEUP</div>
+    </div>
+
+    <video id="myVideo" class="videoHeroBanner_videoPlayer" id="videoHeroBanner_videoPlayer-3359360"
+        aria-label="#MyDermstoreGlow" playsinline="" controls="" controlslist="nodownload" style="height: 100%;">
+        <source src="https://s1.thcdn.com/productvideo/0/DS_60_FINAL_10mb.mp4" type="video/mp4">
+        <source src="https://s1.thcdn.com/productvideo/0/DS_60_FINAL_10mb.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <div id="myDreamGlow">
+        <h1>#MyDermstoreGlow</h1>
+        <div>
+            We care about what goes on your skin, because of what’s within. Our assortment is top-rated, curated &
+            authenticated—bringing you the highest quality products and straight-from-the-experts info to help you
+            navigate all things beauty and skin care. Join the conversation on Instagram with #MyDermstoreGlow—show us
+            your favorite #Dermstore finds that help you care for the skin you’re in! We’re excited to feature our
+            community’s must-haves all season long.
+        </div>
+    </div>
+    <!-- last slide image 4column by -->
+    <div class="contener">
+        <h1>From The Blog</h1>
+    <div class="row slider" >
+       
+        <div class="col-md-4">
+            <div class="details">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/26/Q%26A-with-founder-of-briogeo-063326.jpg"
+                    alt="">
+                <div>Q&A with Nancy Twine, Founder of Briogeo</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="details">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/19/original-skincare-order-073119.jpg"
+                    alt="">
+                <div>In What Order Do I Apply My Skin Care Products?</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="details">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/40/skinceuticals-products-widget-110940.jpg"
+                    alt="">
+                <div>7 Treatments That Work Double Duty While You Sleep</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="details">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/original-9-best-winter-makeup-products-072637.jpg"
+                    alt="">
+                <div>The 9 Best Winter Makeup Products for Glowing Skin</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="details">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/05/original-best-facial-during-fall-and-winter-073505.jpg"
+                    alt="">
+                <div>The Best Facial Treatments to Get During Fall and Winter, According to an Esthetician</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="details">
+                <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/00/original-4_great_cold-weather_moisturizers-073200.jpg"
+                    alt="">
+                <div>4 Great Cold-Weather Moisturizers and Why This NYC Dermatologist Loves Them</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    
+    <!-- footer -->
+    <br>
+    <br>
+    <hr>
+    <div id="container1">
+        
+        <div class ="box11">
+           
+            <p>Sign up to our newsletters and receive the latest exclusive discounts and deals</p>
+                <button id="submit">SIGN ME UP</button>
+                <hr style="margin-top: 10px;">
+                <div id="tp" style="width: 300px; height: auto;">
+                    <p style="margin-top: -25px;">Customer Service</p>
+                 
+                <a href="" ><div style="margin-top: 15px; color: black;"> Help Center / FAQs</div></a>
+                <a href=""><div style="margin-top: 15px; color: black;">Returns</div></a>
+                <a href=""><div style="margin-top: 15px; color: black;">Shipping Information</div></a>
+                <a href=""><div style="margin-top: 15px; color: black;"> Order Status</div></a>
+                </div>
+               
+                    
+        </div>
+        
+       <div class="box2">
+        <p style="margin-left: 18px;">Connect with us</p>
+         <div class="box21">
+            <div><a href="www.google.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div> <a href="www.google.com"></a><i class="fa-brands fa-twitter"></i></div>
+            <div><a href=""></a><i class="fa-brands fa-instagram"></i></div>
+            <div><a href=""></a><i class="fa-brands fa-youtube"></i></div>
+            <div><a href=""></a><i class="fa-brands fa-pinterest-p"></i></div>
+         </div>
+         <div class="box22">
+           
+         <div>
+             <hr style="margin-top: 27px; margin-left: 40px;">
+           <p style="margin-top: -25px;margin-left: 40px;">My Account</p>
+            <a href=""><div style="margin-top: 15px; color: black; margin-left: 40px;">Manage My Subscriptions</div></a>
+            <a href=""><div style="margin-top: 15px; color: black; margin-left: 40px;">My Rewards</div></a>
+            <a href=""><div style="margin-top: 15px; color: black; margin-left: 40px;">My Favorites</div></a>
+            <a href=""><div style="margin-top: 15px; color: black; margin-left: 40px;">Referrals</div></a>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 40px;">Order History</div></a>
+
+         </div>
+         <div>
+             <hr style="margin-top: 27px;">
+             <p style="margin-top: -25px; margin-left: 1px;">Company</p>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">About Us</div></a>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">Press</div></a>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">What is Klarna?</div></a>
+             
+         </div>
+         <div>
+            <hr style="margin-top: 27px;">
+             <p style="margin-top: -25px; margin-left: 1px;">Legal</p>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">Privacy Policy</div></a>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">Terms & Conditions</div></a>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">Modern Slavery Statement</div></a>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">Product Recall</div></a>
+             <a href=""><div style="margin-top: 15px; color: black; margin-left: 1px;">Accessibility</div></a>
+         </div>
+        </div>
+        
+       </div>
+       
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div id="lastcontainer">
+        <div>
+            <h1>THG</h1>
+            <h4>2022 © The Hut.com Ltd.</h4>
+        </div>
+        <div >
+            <div style="font-size: 20px; font-weight: bold; height: 18px">Pay securely with</div>
+            <div class="pay" style="margin-top: -20px;" >
+            
+                <div><i class="fa-brands fa-cc-visa"></i></div>
+                <div><i class="fa-brands fa-cc-visa"></i></div>
+                <div><i class="fa-brands fa-cc-paypal"></i></div>
+                <div><i class="fa-brands fa-cc-mastercard"></i></div>
+                <div><i class="fa-brands fa-cc-mastercard"></i></div>
+                <div><i class="fa-brands fa-cc-amex"></i></div>
+                <div><i class="fa-brands fa-cc-discover"></i></div>
+                <div><i class="fa-brands fa-cc-diners-club"></i></div>
+                <div><i class="fa-brands fa-apple-pay"></i></div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="last">
+    <div>Our partners and us collect data and use cookies, email pixels and similar tools to enhance your experience, analyze traffic and for ad personalization and measurement. One such partner is Google.
+        For more information see our cookie policy</div>
+        <div><button id="accept" style="background-color: white; color: black; border: 1px black solid;">ACCEPT</button></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            
+          $('.slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 500,
+});
+
+ 
+ </script>
+        
+</body>
+</html>
+<script src="./Js file/slide.js"></script>
+<script src="./Js file/product1.js"></script>
+<script src="./Js file/path.js"></script>
+
+

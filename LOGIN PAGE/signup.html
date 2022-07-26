@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login_signup.css">
+   
+</head>
+<style>
+   
+</style>
+<body>
+    <div id="sign">
+       <h1>About You</h1>
+       <h1>Sign Up With</h1>
+       <form id="form">
+           <h4>Full Name</h4>
+           <input type="text" id="name" />
+           <h4>Email address</h4>
+           <input type="text" id="email"/>
+           <h4>Confirm Email <address></address></h4>
+           <input type="text" id="confirmemail"/>
+           <h4>Password</h4>
+           <input type="text" id="pass"/>
+           <h5>Include a minimum of 6 characters, and contain at least 1 number</h5>
+           <h4>Confirm Password</h4>
+           <input type="text" id="confirmpass"/>
+           <h4>mobile Number(Optional)</h4>
+           <input type="text" id="phone"/><br><br><br>
+           <input type="submit" id="submit"/> 
+       </form>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#form").addEventListener("submit",formSubmit);
+   var signArr=JSON.parse(localStorage.getItem("signupDetail")) || [];
+    function formSubmit(event)
+    {
+        event.preventDefault()
+
+        var signObj={
+            name:document.querySelector("#name").value,
+            email:document.querySelector("#email").value,
+            confirmemail:document.querySelector("#confirmemail").value,
+            pass:document.querySelector("#pass").value,
+            confirmpass:document.querySelector("#confirmpass").value,
+
+        };
+        signArr.push(signObj);
+        console.log(signArr)
+        localStorage.setItem("signupDetail", JSON.stringify(signArr));
+       
+        window.location.href="Login.html"
+    }
+    
+</script>

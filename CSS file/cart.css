@@ -1,0 +1,229 @@
+button{
+    font-family: "lato regular",Helvetica,Arial,sans-serif;font-size: 14px;line-height: 1.2;color: #000;font-weight: 400;letter-spacing: 0;text-transform: none;box-sizing: border-box;background-color: #222;color: #fff;border-width: 2px;border-style: solid;border-color: #222;border-radius: 1px;display: inline-block;text-decoration: none;transition: background-color .2s;padding: 9.6px 32px;cursor: pointer;text-align: center;text-transform: uppercase;box-sizing: border-box;display: block;width:95%;margin-top: 30px;
+}
+#Upper{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    height: 110px;
+}
+#Upper>p{
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#Upper>button{
+    margin-bottom: 10px;
+    margin: auto;
+}
+#Lower{
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    margin: auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+#Lower>div{
+    /* border: 1px solid red; */
+    height:auto;
+}
+#Lower>div>img{
+    width:100%;
+    gap: 10px;
+}
+.h3{
+    font-family: "Poly Regular","Times New Roman",serif;
+    font-size: 20px;
+    /* line-height: 24px; */
+    color: #000;
+    /* font-weight: 400; */
+    background-color: aliceblue;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+#Lower>div>p{
+    font-family: "lato regular",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #000;
+    /* font-weight: 500; */
+    margin-top: 10px;
+    cursor: pointer;
+    
+    
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    /* width: 30%; */
+  }
+  th{
+      height: 30px;
+      margin-left: 0%;
+  }
+  tr>td:first-child{
+    width: 600px;
+    text-align: left;
+  }
+  td{
+      height: auto;
+  }
+  tr>td{
+    width: 200px;
+  }
+  tr>td:nth-child(5){
+    background-color: grey; 
+    width: 80px;
+  }
+
+
+  #qty1{
+    margin-left: 50px;
+    display: flex; 
+    width: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+#qty1>div{
+    text-align: center;
+    width: 30px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+/* footer............................................................................................................ */
+
+#container{
+    display: flex;
+    height: 400px;
+    width: 100%;
+   margin-top: 2%;
+    /* border: 1px solid black; */
+}
+.box1{
+    
+    height: 500px;
+    width: 40%;
+    margin-left: 5%;
+    
+}
+
+#submit{
+    padding: 1%;
+    background-color: black;
+    color: white;
+    width: 180px;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-left: 0%;
+}
+/* p{
+    margin: 4%;
+    color: black;
+} */
+/* .box1>div{
+    border: 1px solid greenyellow;
+    height: 300px;
+    width: 0%;
+    margin-top: 26%;
+} */
+.box2{
+    /* border: 1px solid blue; */
+    /* display: flex; */
+    height: 50px;
+    width:  50%;
+  /* margin-top: 1%; */
+}
+.box21{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+   margin-left: 30px;
+   margin-top: 20px;
+   width: 35%;
+
+      
+}
+.box21>div{
+    
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    height: 30px;
+    width: 60%;
+    /* margin-bottom:10% ; */
+    font-size: 25px;
+    background-color: darkgrey;
+    text-align: center;
+    
+
+   
+   /* margin-top: 7%; */
+}
+.box22{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 2px solid teal; */
+    height: 330px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.box22>div>hr{
+    /* border: 2px solid brown; */
+    width: 60%;
+    margin-right: 90px;
+}
+.box22>div>a>p{
+    margin: 9%;
+    
+    color: black;
+    
+}
+a{
+    text-decoration: none;
+}
+.box22>div>p{
+  margin-left: 9%;
+}
+#lastcontainer{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 120px;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+#lastcontainer>div{
+    /* border: 2px solid green; */
+    width: 50%;
+    
+}
+.pay{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(2,100px);
+  
+}
+.pay>div{
+/* border: 2px solid black; */
+font-size: 50px;
+margin-top: 30px;
+padding-top: 12%;
+}
+#last{
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+#accept{
+  padding: 9px;
+  width: 100px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+      #singup
+        {
+           width: 35%;
+            height: 250px;
+             font-size: 25px;
+             margin-left: 400px;
+             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding-left: 80px;
+            border-radius: 15px;
+           
+        }
+        #otpForm>input
+        {
+            width: auto;
+           font-size: 25px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+
+
+        }
+        h2{
+         margin-left: 100px;
+         padding-top: 10px;
+         
+        }
+</style>
+<body>
+    <div id="singup">
+        <h2>OTP Form</h2>
+        <form action="" id="otpForm">
+         <p>OTP</p>
+            <input type="password" id="otp" placeholder=" 3 character">
+             <p></p>
+            <input type="submit" value="Payment" >
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#otpForm").addEventListener("submit",paymentDetails);
+
+function paymentDetails()
+{
+   event.preventDefault();
+    var form=document.querySelector("#otpForm");
+    var otp=form.otp.value;
+    console.log(otp)
+    if(otp=='1234')
+    {
+        alert("payment successful") ;
+        window.location.href="success.html"
+    }
+    else{
+    alert("Invailed OTP Number")
+    }
+}
+</script>

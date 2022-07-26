@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login_signup.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+    <div id="login">
+     <h2>Existing Customers</h2>
+     <form id="form">
+         <h3>Email address</h3>
+         <input type="text" id="email"/>
+         <h3>Password</h3>
+         <input type="password" id="pass" />
+         <h3>Forgotten your password?</h3>
+         <input type="submit" id="submit"/>
+     </form>
+    </div>
+</body>
+</html>
+<script>
+     var redUsers=JSON.parse(localStorage.getItem("signupDetail"));
+     document.querySelector("#form").addEventListener("submit",formSubmit);
+
+     function formSubmit(event) {
+       event.preventDefault();
+     
+       var user=form.email.value;
+       var pass=form.pass.value;
+       console.log(user,pass);
+       
+       var flag=0
+     for(var i=0;i<redUsers.length;i++)
+        {
+        
+            if(redUsers[i].email==user && redUsers[i].pass==pass)
+            
+            {
+                flag=1   
+            }
+        }   
+      if(flag==1)
+      {
+          alert("login successful")
+      }
+      else{
+          alert("login failed")
+      }
+         
+   }
+</script>

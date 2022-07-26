@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #singup
+        {
+           width: 35%;
+            height: 650px;
+             font-size: 25px;
+             margin-left: 400px;
+             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding-left: 80px;
+            border-radius: 15px;
+           
+        }
+        #signupForm>input
+        {
+            width: auto;
+           font-size: 25px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+
+
+        }
+        h2{
+         margin-left: 100px;
+         padding-top: 10px;
+         
+        }
+    </style>
+</head>
+<body>
+    <div id="singup">
+        <h2>Payment Info</h2>
+        <form action="" id="signupForm">
+            <p>Card Holder Name</p>
+            <input type="text" id="name"  >
+            <p>Card Number</p>
+            <input type="text" id="accNum"  >
+            <p>Mobile number</p>
+            <input type="text" id="phone" >
+            <p>CVV</p>
+            <input type="password" id="password" placeholder=" 3 character">
+             <p></p>
+            <input type="submit" value="Payment" >
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#signupForm").addEventListener("submit",paymentDetails);
+
+function paymentDetails()
+{
+   event.preventDefault();
+    var form=document.querySelector("#signupForm");
+    var name=form.name.value;
+    var cardNumber=form.accNum.value;
+    var number=form.phone.value;
+    var cvv=form.password.value;
+    console.log(name,cardNumber)
+    if(cardNumber.length==10)
+    {
+        window.location.href="otp.html"
+    }
+    else{
+    alert("Invailed Card Number")
+    }
+}
+</script>
